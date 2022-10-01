@@ -1,0 +1,294 @@
+<html>
+<head>
+<title>activity_main.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #bababa;}
+.s2 { color: #6a8759;}
+.s3 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_main.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;androidx.constraintlayout.widget.ConstraintLayout </span><span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:app</span><span class="s2">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s2">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:contentDescription</span><span class="s2">=&quot;@null&quot;</span>
+    <span class="s1">tools:ignore</span><span class="s2">=&quot;MainActivity&quot;</span><span class="s0">&gt;</span>
+
+
+    <span class="s0">&lt;ImageView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/imageView&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;441dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;739dp&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.333&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:srcCompat</span><span class="s2">=&quot;@drawable/backgroundlinearpng&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;ImageView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/buttonBar&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;432dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;70dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;607dp&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;54dp&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:srcCompat</span><span class="s2">=&quot;@drawable/bottombar&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;ImageButton</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/arrowUp&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;172dp&quot;</span>
+        <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;172dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;238dp&quot;</span>
+        <span class="s1">android:layout_marginEnd</span><span class="s2">=&quot;173dp&quot;</span>
+        <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;173dp&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;424dp&quot;</span>
+        <span class="s1">android:adjustViewBounds</span><span class="s2">=&quot;true&quot;</span>
+        <span class="s1">android:background</span><span class="s2">=&quot;?android:attr/selectableItemBackground&quot;</span>
+        <span class="s1">android:clickable</span><span class="s2">=&quot;true&quot;</span>
+        <span class="s1">android:contentDescription</span><span class="s2">=&quot;@string/forward_arrow&quot;</span>
+        <span class="s1">android:onClick</span><span class="s2">=&quot;driveForward&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:srcCompat</span><span class="s2">=&quot;@drawable/arrowup&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;ImageButton</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/arrowRight&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;267dp&quot;</span>
+        <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;267dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;331dp&quot;</span>
+        <span class="s1">android:layout_marginEnd</span><span class="s2">=&quot;75dp&quot;</span>
+        <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;75dp&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;334dp&quot;</span>
+        <span class="s1">android:background</span><span class="s2">=&quot;?android:attr/selectableItemBackground&quot;</span>
+        <span class="s1">android:clickable</span><span class="s2">=&quot;true&quot;</span>
+        <span class="s1">android:focusable</span><span class="s2">=&quot;true&quot;</span>
+        <span class="s1">android:onClick</span><span class="s2">=&quot;driveRight&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:srcCompat</span><span class="s2">=&quot;@drawable/arrowright&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;ImageButton</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/arrowLeft&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;73dp&quot;</span>
+        <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;73dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;333dp&quot;</span>
+        <span class="s1">android:layout_marginEnd</span><span class="s2">=&quot;269dp&quot;</span>
+        <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;269dp&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;332dp&quot;</span>
+        <span class="s1">android:background</span><span class="s2">=&quot;?android:attr/selectableItemBackground&quot;</span>
+        <span class="s1">android:clickable</span><span class="s2">=&quot;true&quot;</span>
+        <span class="s1">android:focusable</span><span class="s2">=&quot;true&quot;</span>
+        <span class="s1">android:longClickable</span><span class="s2">=&quot;true&quot;</span>
+        <span class="s1">android:onClick</span><span class="s2">=&quot;driveLeft&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:srcCompat</span><span class="s2">=&quot;@drawable/arrowleft&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;ImageButton</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/arrowDown&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;172dp&quot;</span>
+        <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;172dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;423dp&quot;</span>
+        <span class="s1">android:layout_marginEnd</span><span class="s2">=&quot;173dp&quot;</span>
+        <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;173dp&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;239dp&quot;</span>
+        <span class="s1">android:background</span><span class="s2">=&quot;?android:attr/selectableItemBackground&quot;</span>
+        <span class="s1">android:clickable</span><span class="s2">=&quot;true&quot;</span>
+        <span class="s1">android:onClick</span><span class="s2">=&quot;driveBackward&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:srcCompat</span><span class="s2">=&quot;@drawable/arrowdown&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;ImageButton</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/stopButton&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;169dp&quot;</span>
+        <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;169dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;331dp&quot;</span>
+        <span class="s1">android:layout_marginEnd</span><span class="s2">=&quot;169dp&quot;</span>
+        <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;169dp&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;331dp&quot;</span>
+        <span class="s1">android:background</span><span class="s2">=&quot;?android:attr/selectableItemBackground&quot;</span>
+        <span class="s1">android:clickable</span><span class="s2">=&quot;true&quot;</span>
+        <span class="s1">android:onClick</span><span class="s2">=&quot;driveStop&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:srcCompat</span><span class="s2">=&quot;@drawable/stopbutton&quot; </span><span class="s0">/&gt;</span>
+
+
+    <span class="s0">&lt;Button</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/button5&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;70dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;48dp&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;16dp&quot;</span>
+        <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;16dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;619dp&quot;</span>
+        <span class="s1">android:layout_marginEnd</span><span class="s2">=&quot;325dp&quot;</span>
+        <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;325dp&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;64dp&quot;</span>
+        <span class="s1">android:onClick</span><span class="s2">=&quot;speedModeOne&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;1&quot;</span>
+        <span class="s1">app:backgroundTint</span><span class="s2">=&quot;#7D9F88&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;Button</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/button2&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;70dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;48dp&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;119dp&quot;</span>
+        <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;119dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;619dp&quot;</span>
+        <span class="s1">android:layout_marginEnd</span><span class="s2">=&quot;222dp&quot;</span>
+        <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;222dp&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;64dp&quot;</span>
+        <span class="s1">android:onClick</span><span class="s2">=&quot;speedModeTwo&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;2&quot;</span>
+        <span class="s1">app:backgroundTint</span><span class="s2">=&quot;#ED7D9F88&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;Button</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/button6&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;70dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;48dp&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;223dp&quot;</span>
+        <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;223dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;619dp&quot;</span>
+        <span class="s1">android:layout_marginEnd</span><span class="s2">=&quot;118dp&quot;</span>
+        <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;118dp&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;64dp&quot;</span>
+        <span class="s1">android:onClick</span><span class="s2">=&quot;speedModeThree&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;3&quot;</span>
+        <span class="s1">app:backgroundTint</span><span class="s2">=&quot;#ED7D9F88&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;Button</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/button3&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;70dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;48dp&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;325dp&quot;</span>
+        <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;325dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;619dp&quot;</span>
+        <span class="s1">android:layout_marginEnd</span><span class="s2">=&quot;16dp&quot;</span>
+        <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;16dp&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;64dp&quot;</span>
+        <span class="s1">android:onClick</span><span class="s2">=&quot;speedModeFour&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;4&quot;</span>
+        <span class="s1">app:backgroundTint</span><span class="s2">=&quot;#ED7D9F88&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;Button</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/button4&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;80dp&quot;</span>
+        <span class="s1">android:onClick</span><span class="s2">=&quot;speedPress&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;SPEED&quot;</span>
+        <span class="s1">app:backgroundTint</span><span class="s2">=&quot;#ED7D9F88&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toStartOf</span><span class="s2">=&quot;@+id/button10&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.418&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.0&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;Button</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/button10&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;162dp&quot;</span>
+        <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;162dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;80dp&quot;</span>
+        <span class="s1">android:layout_marginEnd</span><span class="s2">=&quot;161dp&quot;</span>
+        <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;161dp&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;603dp&quot;</span>
+        <span class="s1">android:onClick</span><span class="s2">=&quot;anglePress&quot;</span>
+        <span class="s1">android:state_pressed</span><span class="s2">=&quot;true&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;ANGLE&quot;</span>
+        <span class="s1">app:backgroundTint</span><span class="s2">=&quot;#ED7D9F88&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:rippleColor</span><span class="s2">=&quot;#937474&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;Button</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/button11&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;293dp&quot;</span>
+        <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;293dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;80dp&quot;</span>
+        <span class="s1">android:layout_marginEnd</span><span class="s2">=&quot;30dp&quot;</span>
+        <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;30dp&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;603dp&quot;</span>
+        <span class="s1">android:onClick</span><span class="s2">=&quot;brakePress&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;BRAKE&quot;</span>
+        <span class="s1">app:backgroundTint</span><span class="s2">=&quot;#ED7D9F88&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toTopOf</span><span class="s2">=&quot;parent&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;Switch</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/switch1&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;96dp&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;46dp&quot;</span>
+        <span class="s1">android:onClick</span><span class="s2">=&quot;goToDance&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;Dance&quot;</span>
+        <span class="s1">android:textColor</span><span class="s2">=&quot;#ED7D9F88&quot;</span>
+        <span class="s1">app:layout_constraintBottom_toBottomOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s2">=&quot;0.073&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s2">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintTop_toBottomOf</span><span class="s2">=&quot;@+id/button4&quot;</span>
+        <span class="s1">app:layout_constraintVertical_bias</span><span class="s2">=&quot;0.254&quot; </span><span class="s0">/&gt;</span>
+
+
+<span class="s0">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span></pre>
+</body>
+</html>

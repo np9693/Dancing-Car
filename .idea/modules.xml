@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Dance_Moves.iml" filepath="$PROJECT_DIR$/.idea/modules/Dance_Moves.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Application/Dance_Moves.Application.iml" filepath="$PROJECT_DIR$/.idea/modules/Application/Dance_Moves.Application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spotify-app/Dance_Moves.spotify-app.iml" filepath="$PROJECT_DIR$/.idea/modules/spotify-app/Dance_Moves.spotify-app.iml" />
+    </modules>
+  </component>
+</project>

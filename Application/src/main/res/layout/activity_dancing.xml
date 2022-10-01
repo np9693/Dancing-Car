@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadeScrollbars="false"
+    tools:context=".Activities.DancingActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="441dp"
+        android:layout_height="739dp"
+        android:fadingEdge="horizontal|vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backgroundlinearpng" />
+
+    <Switch
+        android:id="@+id/goToDrive"
+        android:layout_width="162dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginRight="133dp"
+        android:layout_marginBottom="643dp"
+        android:fontFamily="serif-monospace"
+        android:onClick="goToDrive"
+        android:text="Drive"
+        android:textColor="#8BC34A"
+        android:textColorLink="#8BC34A"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollViewL"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="235dp"
+        android:layout_marginRight="235dp"
+        android:layout_marginBottom="383dp"
+        android:scrollbarSize="@dimen/margin_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/linear_Layout_Dance_L"
+            android:layout_width="150dp"
+            android:layout_height="250dp"
+
+            android:background="@color/cardview_dark_background"
+            android:orientation="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:visibility="visible"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.154">
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollViewR"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="383dp"
+        android:scrollbarSize="@dimen/margin_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/linear_Layout_Dance_R"
+            android:layout_width="150dp"
+            android:layout_height="250dp"
+
+            android:background="@color/cardview_dark_background"
+            android:orientation="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:visibility="visible"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.154">
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/createChoreography"
+        android:layout_width="83dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="298dp"
+        android:layout_marginLeft="298dp"
+        android:layout_marginTop="493dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="174dp"
+        android:fontFamily="serif-monospace"
+        android:text="Create Dance"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:backgroundTint="#8BC34A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/recordNewMoves"
+        android:layout_width="83dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="298dp"
+        android:layout_marginLeft="298dp"
+        android:layout_marginTop="429dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="238dp"
+        android:fontFamily="serif-monospace"
+        android:onClick="recordNewMove"
+        android:text="Record Move"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:backgroundTint="#8BC34A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/selectedDances"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="565dp"
+        android:layout_marginEnd="123dp"
+
+        android:layout_marginBottom="121dp"
+        android:fontFamily="serif-monospace"
+        android:inputType="textPersonName"
+        android:text="Selected Dance"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currentDances"
+        android:layout_width="413dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="603dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="75dp"
+        android:background="@color/cardview_dark_background"
+        android:textColor="#8BC34A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="416dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="564dp"
+        android:foreground="@drawable/dance_and_drive_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="119dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="231dp"
+        android:layout_marginRight="231dp"
+        android:layout_marginBottom="588dp"
+        android:fontFamily="serif-monospace"
+        android:text="Moves"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textChor"
+        android:layout_width="155dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginLeft="272dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginBottom="591dp"
+        android:fontFamily="serif-monospace"
+        android:text="Dance"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/resume"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="55dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginLeft="142dp"
+        android:layout_marginTop="455dp"
+        android:layout_marginEnd="214dp"
+        android:layout_marginRight="214dp"
+        android:layout_marginBottom="241dp"
+        android:background="@color/cardview_dark_background"
+        android:cropToPadding="true"
+        android:fadingEdge="none"
+        android:onClick="resumeSong"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="55dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="205dp"
+        android:layout_marginLeft="205dp"
+        android:layout_marginTop="496dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginRight="151dp"
+        android:layout_marginBottom="203dp"
+        android:background="@color/cardview_dark_background"
+        android:onClick="nextSong"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_media_next" />
+
+    <TextView
+        android:id="@+id/displayTextSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.545" />
+
+    <TextView
+        android:id="@+id/displayTextPlaybackPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57" />
+
+    <ImageButton
+        android:id="@+id/spotifyButton"
+        android:layout_width="68dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="496dp"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="185dp"
+        android:background="#00FFFFFF"
+        android:onClick="goToSpotify"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spotifyimage" />
+
+    <ImageButton
+        android:id="@+id/makeCarDance"
+        android:layout_width="68dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="437dp"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="245dp"
+        android:background="#00FFFFFF"
+        android:onClick="makeCarDance"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/picture_1" />
+
+    <ImageButton
+        android:id="@+id/pause"
+        android:layout_width="55dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="205dp"
+        android:layout_marginLeft="205dp"
+        android:layout_marginTop="458dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginRight="151dp"
+        android:layout_marginBottom="241dp"
+        android:background="@color/cardview_dark_background"
+        android:onClick="makeCarPause"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_media_pause" />
+
+    <ImageButton
+        android:id="@+id/previous"
+        android:layout_width="55dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginLeft="142dp"
+        android:layout_marginTop="496dp"
+        android:layout_marginEnd="214dp"
+        android:layout_marginRight="214dp"
+        android:layout_marginBottom="203dp"
+        android:background="@color/cardview_dark_background"
+        android:onClick="previousSong"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_media_previous" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
