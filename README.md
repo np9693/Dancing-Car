@@ -1,4 +1,4 @@
-# Group-12
+# Self Dancing Car 
 
 ![alt text](https://media.discordapp.net/attachments/831502886215221248/836180478083727360/Logo2.png)
 
@@ -62,8 +62,14 @@ The button "CREATE DANCE" lets you select minimum 2 moves that will be created a
 - [Postman, API testing](https://www.postman.com/)
 - [SQLite](https://www.sqlite.org/index.html)
 
-## Developers
+**Programming Languages**
 
+- Java
+- C ++
+- SQL Query
+
+## Developers
+_This was a group project from Software Engineering and Management Program from Gothenburg Univeristy_
 - Karl Stahre (gusstahrka@student.gu.se)
 - Amanda de Souza Turquis (gusdesam@student.gu.se)
 - Maja Linder (guskalmas@student.gu.se)
